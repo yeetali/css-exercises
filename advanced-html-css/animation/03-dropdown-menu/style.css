@@ -30,3 +30,21 @@ ul.dropdown-menu li:hover {
 }
 
 
+.dropdown-menu {
+  animation: dropdown .5s ease-in-out;
+  transform-origin: top;
+}
+
+@keyframes dropdown {
+  from {
+    transform: scaleY(0);
+  }
+
+  70% {
+    transform: scaleY(1.1);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
